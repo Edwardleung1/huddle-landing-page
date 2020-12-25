@@ -1,0 +1,53 @@
+@import 'colors';
+@import 'media-queries';
+
+.navbar {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem calc((100vw - 1440px) / 2);
+  z-index: 10;
+  position: relative;
+  margin-top: 30px;
+
+  &__logo {
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    margin-left: 30px;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    margin-right: 30px;
+
+    &--links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      padding: 0 1rem;
+    }
+
+    #button {
+      padding: 10px 23px;
+      border: 1px solid $lightPink;
+      outline: none;
+      border-radius: 30px;
+      color: $lightPink;
+      opacity: 1;
+
+      &:hover {
+        color: $lightPink;
+        opacity: 0.7;
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+    }
+  }
+}
